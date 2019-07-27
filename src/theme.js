@@ -3,6 +3,9 @@ import { swiss } from 'mdx-deck/themes'
 export default {
   ...swiss,
   styles: {
+    p: {
+      textAlign: 'center',
+    },
     code: {
       fontSize: '0.4em'
     },

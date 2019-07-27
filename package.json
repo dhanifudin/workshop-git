@@ -11,6 +11,7 @@
   "author": "Dian Hanifudin Subhi <dhanifudin@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^6.1.0",
     "eslint-plugin-react": "^7.14.3",
     "mdx-deck": "^3.0.7"
   }
