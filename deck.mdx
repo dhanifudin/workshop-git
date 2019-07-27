@@ -10,7 +10,7 @@ export const themes = [ theme, prism ]
 
 ---
 
-### Requirements
+## Requirements
 
 - Git
 - Github Account
@@ -18,7 +18,7 @@ export const themes = [ theme, prism ]
 
 ---
 
-### Introduction to Markdown
+## Introduction to Markdown
 
 ---
 
@@ -83,7 +83,7 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
 ## Git
 
-> Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. <small>source: https://git-scm.com</small>
+> "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency." <small>source: https://git-scm.com</small>
 
 ---
 
@@ -175,18 +175,44 @@ Commiting Files
   <Appear>
     <li>Create a new file called <b>hello.md</b></li>
     <li>Edit the content and put your name<code>Hello, I'm dhanifudin. I want to learn Git</code></li>
-    <li>Check status, compare with the previous status output</li>
+    <li>Check repository status</li>
+    <li>Compare with the previous status output</li>
     <li>Add file with the following command <code>git add hello.md</code></li>
   </Appear>
 </ol>
 
 ---
 
+## Commiting files
+
 <ol>
   <Appear>
-    <li>Run following command, inside your repository<code>git status</code></li>
-    <li>Add File<code>git add</code></li>
-    <li>Commiting File<code>git commit</code></li>
-    <li>Ignoring File<code>.gitignore</code></li>
+    <li>Move file from staging area into repository</li>
+    <li>Add message to log history</li>
+    <li>Please run command below<code>git commit -m "Add message hello.md"</code></li>
   </Appear>
 </ol>
+
+---
+
+## Ignoring files
+
+<ol>
+  <Appear>
+    <li>Sometimes we need to ignore files to be untracked.</li>
+    <li>Git use pattern in <em>.gitignore</em></li>
+  </Appear>
+</ol>
+
+---
+
+## Example .gitignore
+
+```
+# Ignore all files with extensions .tmp
+*.tmp
+# Ignore node_modules directory
+node_modules/
+```
+
+[More Examples](https://github.com/github/gitignore)
