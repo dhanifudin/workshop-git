@@ -1,6 +1,9 @@
 import theme from './src/theme'
 import { prism } from 'mdx-deck/themes'
 import { Appear, Image, Horizontal, Split, FullScreenCode } from 'mdx-deck'
+import repositoryImage from './images/create-repository.png'
+import instructionImage from './images/instruction-repository.png'
+import pushPullImage from './images/push-pull.jpg'
 
 export const themes = [ theme, prism ]
 
@@ -131,7 +134,7 @@ To simplify process and explanation, we will use terminal client for git. But fe
 
 # Setup & Preparation
 
-## Please create Github account first
+Please create Github account first
 
 ---
 
@@ -257,4 +260,48 @@ Run command `git log` from your working directory.
 
 ## Create repository
 
-<img src={require('file-loader!./create-repository.png')} />
+<img src={repositoryImage} />
+
+---
+
+## Follow the instructions
+
+<img src={instructionImage} />
+
+---
+
+<img src={pushPullImage} />
+
+---
+
+## Push into repository
+
+Run following command below to push into remote repository.
+
+```
+git push -u origin master
+```
+
+<Appear>
+  <blockquote>Branch <strong>master</strong> is default branch in Git.</blockquote>
+</Appear>
+
+---
+
+## Pull repository
+
+You can run `git pull` to update your local repository.
+
+---
+
+# What's so special about git?
+
+<Appear>
+  <blockquote>We have already Gdrive or Dropbox</blockquote>
+</Appear>
+
+---
+
+Source Code Management vs File Sync Service
+
+---
