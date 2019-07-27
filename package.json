@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "mdx-deck deck.mdx"
+    "start": "mdx-deck deck.mdx",
+    "build": "mdx-deck build deck.mdx"
   },
   "keywords": [],
   "author": "Dian Hanifudin Subhi <dhanifudin@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "eslint-plugin-react": "^7.14.3",
     "mdx-deck": "^3.0.7"
   }
 }

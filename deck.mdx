@@ -1,10 +1,10 @@
 import theme from './src/theme'
 import { prism } from 'mdx-deck/themes'
-import { Image, Horizontal, Split, FullScreenCode } from 'mdx-deck'
+import { Appear, Image, Horizontal, Split, FullScreenCode } from 'mdx-deck'
 
 export const themes = [ theme, prism ]
 
-# Workshop Git
+# Git Workshop
 
 [dhanifudin](https://github.com/dhanifudin) & [siubie](https://github.com/siubie)
 
@@ -81,6 +81,112 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
 ---
 
+## Git
+
+> Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. <small>source: https://git-scm.com</small>
+
+---
+
+## You can use git in offline mode
+
+![So Cool!](https://media3.giphy.com/media/eB5OehaKKZ8UzQLxSr/giphy.gif?cid=790b76115d3ba4554f444d386f3eff97&rid=giphy.gif)
+
+---
+
+<Image
+  src='https://source.unsplash.com/random/800x600/?wii'
+  style={{
+    alignItems: 'center',
+    backgroundColor: 'black',
+    color: 'white',
+    display: 'flex',
+    justifyContent: 'center',
+    textAlign: 'center',
+  }}>
+
+Git is like playing game,
+You need to save data before fight the Boss
+
+</Image>
+
+---
+
+<Image
+  src='https://img2.goodfon.com/wallpaper/nbig/7/ec/justdoit-dzhastduit-motivaciya.jpg'/>
+
+---
+
+To simplify process and explanation, we will use terminal client for git. But feel free to use other git client.
+
+---
+
 ## Scenario 1
 
-Create Repository
+Commiting Files
+
+---
+
+## Initialize Repository
+
+<ol>
+  <Appear>
+    <li>Open your terminal or git bash (in windows)</li>
+    <li>Create a directory <code>mkdir hello-git</code></li>
+    <li>Initialize repository <code>git init</code></li>
+    <li>Check hidden subdirectory called <em>.git</em></li>
+  </Appear>
+</ol>
+
+---
+
+## Check Repository Status
+
+<ol>
+  <Appear>
+    <li>Run following command, inside your repository<code>git status</code></li>
+    <li>The directory is called <b>Working Directory</b></li>
+    <li>All changed files will be <b>tracked</b></li>
+    <li>All new files are <b>untracked</b> by default</li>
+  </Appear>
+</ol>
+
+---
+
+## Add Files
+
+
+<ol>
+  <Appear>
+    <li>To save, or commit files into Git repository. You need to add them to the staging area.</li>
+    <li>Git has three areas</li>
+      <ol>
+        <li>Working Directory</li>
+        <li>Staging Area</li>
+        <li>Repository</li>
+      </ol>
+  </Appear>
+</ol>
+
+---
+
+## Add Files (continued...)
+
+<ol>
+  <Appear>
+    <li>Create a new file called <b>hello.md</b></li>
+    <li>Edit the content and put your name<code>Hello, I'm dhanifudin. I want to learn Git</code></li>
+    <li>Check repository status, compare with the previous status output</li>
+    <li>Add file with the following command <code>git add hello.md</code></li>
+  </Appear>
+</ol>
+
+---
+
+<ol>
+  <Appear>
+    <li>Run following command, inside your repository<code>git status</code></li>
+    <li>Add File<code>git add</code></li>
+    <li>Commiting File<code>git commit</code></li>
+    <li>Ignoring File<code>.gitignore</code></li>
+  </Appear>
+</ol>
