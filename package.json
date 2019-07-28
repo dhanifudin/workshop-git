@@ -1,8 +1,7 @@
 {
   "name": "workshop-git",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Git basic workshop",
   "scripts": {
     "start": "mdx-deck deck.mdx",
     "build": "mdx-deck build deck.mdx"
@@ -12,8 +11,6 @@
   "license": "ISC",
   "devDependencies": {
     "eslint": "^6.1.0",
-    "eslint-plugin-react": "^7.14.3",
-    "file-loader": "^4.1.0",
     "mdx-deck": "^3.0.7"
   }
 }
