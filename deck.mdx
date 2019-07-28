@@ -1,15 +1,10 @@
 import theme from './src/theme'
 import { prism } from 'mdx-deck/themes'
-import { Appear, Image, Horizontal, Split, FullScreenCode } from 'mdx-deck'
-import repositoryImage from './images/create-repository.png'
-import instructionImage from './images/instruction-repository.png'
-import pushPullImage from './images/push-pull.jpg'
-import forkRepositoryImage from './images/fork-repository.png'
-import createOrgImage from './images/create-org.png'
+import { Appear, Image } from 'mdx-deck'
 
 export const themes = [ theme, prism ]
 
-# Git Basic Workshop
+# Polinema Git Basic Workshop
 
 [dhanifudin](https://github.com/dhanifudin) & [siubie](https://github.com/siubie)
 
@@ -303,17 +298,23 @@ Run command `git log` from your working directory.
 
 ---
 
+import repositoryImage from './images/create-repository.png'
+
 ## Create repository
 
 <img src={repositoryImage} />
 
 ---
 
+import instructionImage from './images/instruction-repository.png'
+
 ## Follow the instructions
 
 <img src={instructionImage} />
 
 ---
+
+import pushPullImage from './images/push-pull.jpg'
 
 <img src={pushPullImage} />
 
@@ -368,6 +369,8 @@ Source Code Management vs File Sync Service
 
 ---
 
+import forkRepositoryImage from './images/fork-repository.png'
+
 ## Fork Repository
 
 <img src={forkRepositoryImage} />
@@ -406,7 +409,11 @@ Open https://github.com/dhanifudin/workshop-git-guestbook
 
 ---
 
+import createOrgImage from './images/create-org.png'
+
 ## Step 1 Create Organization
+
+<img src={createOrgImage} />
 
 ---
 
@@ -421,3 +428,151 @@ Open https://github.com/dhanifudin/workshop-git-guestbook
 ## Step 4 Collaborate :)
 
 ---
+
+## Create Organization Repository
+
+<ol>
+  <Appear>
+    <li>Create organization repository, called <strong>members</strong></li>
+    <li>Add file <strong>README.md</strong></li>
+    <li>Put your ID for every member organization</li>
+    <li>Don't forget to pull and push your commits</li>
+  </Appear>
+</ol>
+
+---
+
+## Example
+
+```markdown
+# Members
+
+Putra Prima Arhandi - [siubie](https://github.com/siubie)
+Dian Hanifudin Subhi - [dhanifudin](https://github.com/dhanifudin)
+```
+
+---
+
+<Image
+  src='https://source.unsplash.com/random/800x600/?conflict'
+  style={{
+    alignItems: 'center',
+    backgroundColor: 'black',
+    color: 'white',
+    display: 'flex',
+    justifyContent: 'center',
+    textAlign: 'center',
+  }}>
+
+## Scenario 5: Resolve Conflict
+
+</Image>
+
+---
+
+```
+$ git status
+> # On branch master
+> # You have unmerged paths.
+> #   (fix conflicts and run "git commit")
+> #
+> # Unmerged paths:
+> #   (use "git add ..." to mark resolution)
+> #
+> # both modified:      README.md
+> #
+> no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+---
+
+## How to fix this?
+
+```
+If you have questions, please
+<<<<<<< HEAD
+open an issue
+=======
+ask your question in IRC.
+>>>>>>> develop
+```
+
+Open text editor and focus on three available marker!
+
+---
+
+## Solution
+
+```
+If you have questions, please open an issue or ask in our IRC channel.
+```
+
+Don't forget to run **git add README.md** and give meaningful commit message.
+
+---
+
+<Image
+  src='https://source.unsplash.com/random/800x600/?branch'
+  style={{
+    alignItems: 'center',
+    backgroundColor: 'black',
+    color: 'white',
+    display: 'flex',
+    justifyContent: 'center',
+    textAlign: 'center',
+  }}>
+
+## Scenario 5: Branching
+
+</Image>
+
+---
+
+## Why we need it?
+
+<ul>
+  <Appear>
+    <li>We have many version in one repository</li>
+    <li>Not affraid make mistake :)</li>
+  </Appear>
+</ul>
+
+---
+
+## How?
+
+```
+git checkout -b branch-name
+```
+
+---
+
+## What's next?
+
+My branch is stable now, I want to merge into master.
+
+```
+git checkout master
+git merge branch-name
+```
+
+<Appear>
+  <blockquote>It's easy peasy lemon squeezy :)</blockquote>
+</Appear>
+
+---
+
+<Image
+  src='https://source.unsplash.com/random/800x600/?happy'
+  style={{
+    alignItems: 'center',
+    backgroundColor: 'black',
+    color: 'white',
+    display: 'flex',
+    justifyContent: 'center',
+    textAlign: 'center',
+  }}>
+
+# Thank You :)
+
+</Image>
